@@ -9,7 +9,6 @@ authors:
 description: Dynamic inventory plugin that queries PatchMon HTTP API and exposes hosts as an Ansible inventory.
 license:
   - AGPL-3.0-or-later
-license_file: LICENSE
 tags:
   - patchmon
   - inventory
