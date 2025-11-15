@@ -1,0 +1,18 @@
+---
+# SPDX-License-Identifier: AGPL-3.0-or-later
+namespace: patchmon
+name: dynamic_inventory
+version: 1.0.0
+readme: README.md
+authors:
+  - Steve Libonati <stevelibonati@yahoo.com>
+description: Dynamic inventory plugin that queries PatchMon HTTP API and exposes hosts as an Ansible inventory.
+license:
+  - AGPL-3.0-or-later
+tags:
+  - patchmon
+  - inventory
+  - dynamic
+repository: https://github.com/PatchMon/PatchMon-ansible
+issues: https://github.com/PatchMon/PatchMon-ansible/issues
+
