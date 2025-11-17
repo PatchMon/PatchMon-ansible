@@ -87,15 +87,17 @@ class InventoryModule(BaseInventoryPlugin):
                         
                         name = entry.get('hostname')
                         
-                        if name:
-                                self.inventory.add_host(name)
+                        if not name:
+                                continue  # Skip entries without hostname
+                        
+                        self.inventory.add_host(name)
 
                         addr = entry.get('ip')
                         if addr:
                                 self.inventory.set_variable(name, 'ansible_host', addr)
 
                         # assign to groups
-                        groups = entry.get('host_groups')
+                        groups = entry.get('host_groups', [])
                         
                         for grp in groups:
                                 if not grp:
