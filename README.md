@@ -50,7 +50,7 @@ Create an inventory configuration file (e.g., `patchmon_inventory.yml`):
 ```yaml
 ---
 plugin: patchmon.dynamic_inventory
-api_url: http://localhost:3000/api/v1/api/hosts/
+api_url: http://localhost:3000/api/v1/api/hosts
 api_key: your_api_key
 api_secret: your_api_secret
 verify_ssl: false
